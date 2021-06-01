@@ -1,0 +1,127 @@
+header {
+  width: 100%;
+  box-shadow: 2px 2px 2px -2px rgba(0, 0, 0, 0.9);
+  position: fixed;
+  background-color: var(--gray-3);
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  padding: 5px 0;
+}
+
+.navbar {
+  width: 90%;
+  margin: auto;
+}
+
+.navbar__mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle__btn {
+  background: transparent;
+  transition: var(--main-transition);
+  border: none;
+  outline: none;
+}
+
+.toggle__btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.bar {
+  width: 40px;
+  height: 7px;
+  position: relative;
+  background-color: var(--gray-1);
+  transition: var(--main-transition);
+  border-radius: 2px;
+}
+
+.bar::before,
+.bar::after {
+  content: "";
+  width: 40px;
+  height: 7px;
+  position: absolute;
+  background-color: var(--gray-1);
+  border-radius: 2px;
+}
+.bar::before {
+  margin: -10px 0 0 -20px;
+}
+.bar::after {
+  margin: 10px 0 0 -20px;
+}
+/* .menu__open {
+  transform: rotate(180deg);
+} */
+header h3 {
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.nav__links {
+  height: 0;
+  overflow: hidden;
+  list-style-type: none;
+  transition: var(--main-transition);
+}
+/* height to be add on toggle */
+.show__hidden {
+  height: 150px;
+}
+
+/* align inner links*/
+.main__links {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.nav__item {
+  padding: 10px;
+}
+.nav__link {
+  text-decoration: none;
+  color: var(--gray-1);
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: var(--main-transition);
+  padding: 5px 10px;
+}
+.nav__link:hover {
+  background-color: var(--gray-2);
+  color: var(--gray-3);
+  border-radius: 8px;
+  width: auto;
+}
+.nav__link:active {
+  color: transparent;
+  transform: scale(0.9);
+}
+
+@media screen and (min-width: 768px) {
+  .toggle__btn {
+    display: none;
+  }
+  header .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav__links {
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  /* re-align inner links*/
+  .main__links {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,22 @@
+.landing {
+  height: 400px;
+  width: 100%;
+  background-color: var(--gray-2);
+  display: grid;
+  place-items: center;
+  color: var(--gray-4);
+  letter-spacing: 1.5px;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+.landing h2 {
+  text-shadow: none;
+  font-size: clamp(1rem, -0.875rem + 8.333vw, 3.5rem);
+  font-weight: bold;
+}
+
+.landing p {
+  margin-top: -5px;
+  font-size: 20px;
+}
