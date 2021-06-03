@@ -1,9 +1,14 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import React from "react";
+// Using the custom render function
+import { render } from "./test-utils";
+import { App } from "./App";
+//import { RootState } from "./redux/Reducer";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe("App Test Suite", () => {
+  it("Renders the store connected app with initialState", () => {
+    const { container } = render(<App />, {
+      initialState: { contacts: { data: {}, loading: false, error: "" } },
+    });
+    expect(container).toBeInTheDocument();
+  });
 });

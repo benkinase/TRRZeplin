@@ -1,0 +1,74 @@
+.get__informed {
+  width: 90%;
+  margin: 65px auto;
+  background-color: var(--gray-4);
+  border-radius: 5px 5px 0 0;
+}
+.get__informed h3 {
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 5px 0;
+  font-size: 25px;
+  text-transform: capitalize;
+  color: var(--gray-2);
+}
+#form {
+  padding: 10px 0;
+  width: 90%;
+  margin: auto;
+}
+
+.input__control,
+.select__control {
+  width: 100%;
+  padding: 10px 0;
+  margin: 1.2vh 0;
+  display: block;
+  letter-spacing: 2px;
+  font-size: 17px;
+  border-radius: 8px 0 8px;
+  transition: var(--main-transition);
+  background-color: var(--gray-5);
+  border: 0.5px solid var(--gray-3);
+}
+.input__control:focus,
+.select__control:focus {
+  outline: none;
+}
+.input__control::placeholder {
+  letter-spacing: 2px;
+  padding: 5px;
+}
+.phone__number {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 3px;
+  margin-top: -7px;
+}
+
+.button__container {
+  width: 100%;
+  margin: 30px auto;
+}
+.error__alert {
+  color: var(--snubes-red);
+}
+.red {
+  border: 1px solid var(--snubes-red);
+}
+/* tablet*/
+@media screen and (min-width: 768px) {
+  .get__informed {
+    width: 80%;
+  }
+  #form {
+    width: 80%;
+    margin: auto;
+  }
+}
+/*above tablet*/
+@media screen and (min-width: 992px) {
+  .get__informed {
+    width: 50%;
+  }
+}

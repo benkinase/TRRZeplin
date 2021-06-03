@@ -2,15 +2,15 @@
   --gray-1: #202c38;
   --gray-2: #4e5c69;
   --gray-3: #cfcfcc;
-  --gray-4: #f1f1f1;
+  --gray-4: #f5f5f5;
   --gray-5: #fcfcfc;
 
-  --snubes-red: #ee3232;
-  --snubes-coral: #db9005d8;
+  --snubes-red: #ff3939;
+  --snubes-coral: #ee9f0cd8;
 
   --main-transition: all 0.4s linear;
   --main-spacing: 3px;
-  --light-shadow: 2px 5px 3px -2px rgba(0, 0, 0, 0.1);
+  --light-shadow: 2px 2px 2px -2px rgba(0, 0, 0, 0.9);
   --dark-hadow: 4px 5px 2px 0px rgba(0, 0, 0, 0.5);
 }
 
@@ -18,11 +18,4 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-}
-.underline {
-  width: 90%;
-  height: 3px;
-  background-color: var(--snubes-coral);
-  padding: 5px;
-  margin: 5px auto;
 }
