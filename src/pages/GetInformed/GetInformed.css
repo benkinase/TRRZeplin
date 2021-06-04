@@ -31,9 +31,11 @@
   background-color: var(--gray-5);
   border: 0.5px solid var(--gray-3);
 }
+
 .input__control:focus,
 .select__control:focus {
   outline: none;
+  padding-left: 5px;
 }
 .input__control::placeholder {
   letter-spacing: 2px;

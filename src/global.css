@@ -14,6 +14,18 @@
   --dark-hadow: 4px 5px 2px 0px rgba(0, 0, 0, 0.5);
 }
 
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--gray-5);
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .app__layout {
   display: flex;
   flex-direction: column;

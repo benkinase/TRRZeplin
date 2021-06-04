@@ -8,10 +8,6 @@ export function Contact({ contact }: ContactProps) {
   return (
     <React.Fragment>
       <div>
-        <strong>ID</strong>
-        <p>{contact.id}</p>
-      </div>
-      <div>
         <strong>Company</strong>
         <p>{contact.company}</p>
       </div>

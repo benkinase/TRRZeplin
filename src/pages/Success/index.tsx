@@ -8,12 +8,18 @@ import { Contact } from "./Contact";
 type SuccessProps = {
   setShowSuccess: (value: boolean) => void;
 };
+
 export const Success: FC<SuccessProps> = ({ setShowSuccess }) => {
   // subscribe to redux store
   const { data, loading, error }: ContactState = useSelector(
     (state: RootState) => state.contacts,
     shallowEqual
   );
+
+  // function to index current contact from contact array
+  const lastContactIn = (arr: IContact[]) => {
+    return arr[arr.length - 1];
+  };
 
   if (loading) {
     return <p>Loading..</p>;
@@ -22,7 +28,7 @@ export const Success: FC<SuccessProps> = ({ setShowSuccess }) => {
     return <p>Something went wrong</p>;
   }
   // current contact
-  const current = lastInSync(data);
+  const current = lastContactIn(data);
 
   return (
     <div className='success__container'>
@@ -42,7 +48,3 @@ export const Success: FC<SuccessProps> = ({ setShowSuccess }) => {
     </div>
   );
 };
-// return curent/last contact
-function lastInSync(contacts: IContact[]) {
-  return contacts[contacts.length - 1];
-}
