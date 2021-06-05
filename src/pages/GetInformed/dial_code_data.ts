@@ -288,31 +288,3 @@ export const codes: CodeData[] = [
   { id: 273, country: "Zimbabwe", ISDCode: "+263" },
 ];
 
-export const data = [
-  {
-    id: 1,
-    name: "Chibueze",
-    company: "ReDI School of Digital Integration GmbH",
-    email: "newUser3123456@gmail.co",
-    phone: "+4915788073258",
-  },
-  {
-    id: 2,
-    name: "Chibueze233",
-    company: "ReDI School of Digital Integration GmbH",
-    email: "gbeni@gmail.co",
-    phone: "+4915788073258",
-  },
-  {
-    id: 8,
-    name: "Chibueze233",
-    company: "ReDI School of Digital Integration GmbH",
-    email: "gbeni@gmail.co",
-    phone: "+4915788073258",
-  },
-];
-
-//let currentContact
-export function lastSync(arr: Array<any>) {
-  return arr[arr.length - 1];
-}
